@@ -1,1 +1,1 @@
-A terminal program to edit pgm files using rle encoding.
+This is a terminal program to edit pgm files using rle encoding.
