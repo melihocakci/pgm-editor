@@ -248,7 +248,7 @@ void changeCoordinate(RLE* rle, int row, int col, int val){
 	int intervalR = ptr + iter->count - des;
 	Node* new = newNode(val);
 	Node* tmp;
-	//sol taraf
+	//left side
 	if(intervalL == 0){
 		if(iter->left == NULL){
 			new->left = NULL;
@@ -282,7 +282,7 @@ void changeCoordinate(RLE* rle, int row, int col, int val){
 			rle->nodes = tmp;
 		}
 	}
-	//sag taraf
+	//right side
 	if(intervalR == 0){
 		if(iter->right == NULL){
 			new->right = NULL;
